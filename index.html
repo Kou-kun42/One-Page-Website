@@ -19,11 +19,6 @@
         overflow: auto;
       }
 
-      main > section,
-      main > footer {
-        min-height: 100vh;
-      }
-
       #nav {
         justify-content: space-between;
         align-items: baseline;
@@ -103,6 +98,11 @@
         margin: 10em 0;
       }
 
+      #videos h2 {
+        font-size: 3em;
+        text-align: center;
+      }
+
       #videos ul {
         display: flex;
         justify-content: flex-start;
@@ -112,6 +112,45 @@
 
       .video {
         margin: 1.5em;
+      }
+
+      #self_checkup {
+        margin: 10em 0;
+      }
+
+      #self_checkup h2 {
+        font-size: 3em;
+        text-align: center;
+      }
+
+      .checkup {
+        height: 420px;
+        margin: 2em;
+        background-color: #dbf4ff;
+        box-shadow: 0 0 22px #637b85;
+        display: flex;
+      }
+
+      .contents h3 {
+        font-size: 2em;
+      }
+
+      .contents {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 0 3em;
+        font-size: larger;
+      }
+
+      .contents > a {
+        text-decoration: none;
+        font-style: none;
+      }
+
+      .checkup img {
+        height: 100%;
       }
     </style>
   </head>
@@ -201,6 +240,7 @@
       </section>
 
       <section id="videos">
+        <h2>Videos</h2>
         <ul>
           <li class="video">
             <iframe
@@ -236,24 +276,26 @@
       </section>
 
       <section id="self_checkup">
-        <div>
-          <h2>Self Checkup</h2>
-          <ul>
-            <li class="checkup">
-              <img src="img/assessment.jpg" />
+        <h2>Self Checkup</h2>
+        <ul>
+          <li class="checkup">
+            <img src="img/assessment.jpg" />
+            <div class="contents">
               <h3>Self-Compassion Assessment</h3>
               <p>
                 Use this website to help you understand your current state of
-                compassion and keep referencing it as you progress into this
-                mindset.
+                compassion, and continue to reference it as you progress into
+                this new mindset.
               </p>
               <a
                 href="https://self-compassion.org/test-how-self-compassionate-you-are/"
                 >Self-Compassion Test</a
               >
-            </li>
-            <li class="checkup">
-              <img src="img/body_scan.jpg" />
+            </div>
+          </li>
+          <li class="checkup">
+            <img src="img/body_scan.jpg" />
+            <div class="contents">
               <h3>Body Scan Meditation</h3>
               <p>
                 Body scan meditation is a great way to take a break from
@@ -266,56 +308,52 @@
                 href="https://www.helpguide.org/meditations/body-scan-meditation.htm#:~:text=The%20body%20scan%20is%20one,is%20not%20the%20primary%20goal."
                 >Body Scan Guide 2</a
               >
-            </li>
-          </ul>
-        </div>
+            </div>
+          </li>
+        </ul>
       </section>
 
       <section id="quotes">
-        <div>
-          <ul>
-            <li>
-              <blockquote>
-                <p>
-                  "If you want others to be happy, practice compassion. If you
-                  want to be happy, practice compassion."
-                </p>
-                <footer>
-                  <cite>Dalai Lama</cite>
-                </footer>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>
-                  "Compassion for others begins with kindness to ourselves."
-                </p>
-                <footer>
-                  <cite>Pema Chodron</cite>
-                </footer>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>
-                  "Compassion is to look beyond your own pain, to see the pain
-                  of others."
-                </p>
-                <footer>
-                  <cite>Yasmin Mogahed</cite>
-                </footer>
-              </blockquote>
-            </li>
-            <li>
-              <blockquote>
-                <p>"Compassion will cure more sins than condemnation."</p>
-                <footer>
-                  <cite> Henry Ward Beecher </cite>
-                </footer>
-              </blockquote>
-            </li>
-          </ul>
-        </div>
+        <ul>
+          <li>
+            <blockquote>
+              <p>
+                "If you want others to be happy, practice compassion. If you
+                want to be happy, practice compassion."
+              </p>
+              <footer>
+                <cite>Dalai Lama</cite>
+              </footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>"Compassion for others begins with kindness to ourselves."</p>
+              <footer>
+                <cite>Pema Chodron</cite>
+              </footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>
+                "Compassion is to look beyond your own pain, to see the pain of
+                others."
+              </p>
+              <footer>
+                <cite>Yasmin Mogahed</cite>
+              </footer>
+            </blockquote>
+          </li>
+          <li>
+            <blockquote>
+              <p>"Compassion will cure more sins than condemnation."</p>
+              <footer>
+                <cite> Henry Ward Beecher </cite>
+              </footer>
+            </blockquote>
+          </li>
+        </ul>
       </section>
 
       <footer id="email_registration">
